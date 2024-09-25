@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+}
+
+body {
+    display: block;
+    background-color: #313131;
+    margin: 10px;
 }
 
 .hero {
@@ -12,11 +16,6 @@
     background-color: white;
 }
 
-body {
-    display: block;
-    background-color: #313131;
-    margin: 10px;
-}
 
 .hero h1 {
     justify-self: center;
@@ -25,19 +24,11 @@ body {
     font-size: 3rem;  /* Adjust the font-size of our h1 text*/
 }
 
-.header nav {
-    display: flex;
-    justify-items: center;
-}
+.container nav {
 
-.header nav ul {
-    display: inline;
-}
-
-.header nav ul li {
-    display: inline; */
 }
 
 .content section {
+
     display: flex;
 }

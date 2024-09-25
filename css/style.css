@@ -7,31 +7,38 @@
 .hero {
     display: grid;
     height: 10rem;
-    width: 100vw;
+    width: 100%;
     background-image: none;
     background-color: white;
 }
 
 body {
+    display: block;
     background-color: #313131;
+    margin: 10px;
 }
 
 .hero h1 {
     justify-self: center;
     align-self: center;
     color: gold;
+    font-size: 3rem;  /* Adjust the font-size of our h1 text*/
 }
 
 .header nav {
+    display: flex;
+    justify-items: center;
+}
 
+.header nav ul {
+    display: inline;
 }
 
 .header nav ul li {
-    display: inline-block;
-    align-items: center;
+    display: inline; */
 }
 
-.content {
+.content section {
     display: flex;
 }
 

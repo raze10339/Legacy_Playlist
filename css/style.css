@@ -47,11 +47,15 @@ body {
     text-transform: uppercase;
 }
 
-.content {
+.my-music-content {
     margin: 2.5rem 1.5rem 1.5rem 5rem;
 }
 
-.content section {
+.explore-content {
+    margin: 2.5rem;
+}
+
+.my-music-content section {
     margin: 3rem;
     padding: 50px 70px;
     background-color: #474747;
@@ -62,7 +66,7 @@ body {
     max-width: 20%;
 }
 
-.content section button {
+.my-music-content section button {
     background-color: gold;
     border-width: 5px;
     border-radius: 10px;
@@ -70,11 +74,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    max-height: 10rem;
-    max-width: fit-content;
+    align-items: center;
+    min-height: 4.5rem;
+    min-width: 6rem;
 }
 
-.content section button:hover {
+.my-music-content section button:hover {
     color: gold;
     background-color: black;
 }
@@ -82,5 +87,42 @@ body {
 .container nav a:active {
     background-color: black;
     color: gold;
-    text-transform: capitalize;
 }
+
+#new-releases {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#new-releases-article {
+    margin: 1.5rem;
+    min-width: 50rem;
+    min-height: 20rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#new-releases-title {
+    margin: 0;
+    font-size: 2rem;
+    max-height: 4rem;
+}
+
+#browse-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.suggestion-display {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .suggestion-display article {
+    margin: 7.5rem;
+} */

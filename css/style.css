@@ -3,12 +3,21 @@
     color: #dfd261;
 }
 
-header {
+h1,
+h2 {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }

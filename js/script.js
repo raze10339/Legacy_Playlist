@@ -1,6 +1,6 @@
 const addMusicBtn = document.querySelector('#addMusic');
 const darkModeBtn = document.querySelector('#toggle-btn');
-const btnColor = document.querySelector('button')
+const btnColor = document.querySelectorAll('.buttons')
 
 
 function toggleDarkMode() {
@@ -9,15 +9,18 @@ function toggleDarkMode() {
     if (mode === 'light') {
         document.body.classList.add('dark');
         localStorage.setItem('mode', 'dark');
-        darkModeBtn.classList.remove('btn-info');
-        darkModeBtn.classList.add('btn-outline-warning')
+        btnColor.forEach(button => {
+            button.classList.remove('btn-info');
+            button.classList.add('btn-outline-warning');
+        });
     } else {
         document.body.classList.remove('dark');
         localStorage.setItem('mode', 'light');
-        darkModeBtn.classList.remove('btn-outline-warning')
-        darkModeBtn.classList.add('btn-info');
+        btnColor.forEach(button => {
+            button.classList.remove('btn-outline-warning');
+            button.classList.add('btn-info');
+        });
     }
-
 }
 
 
@@ -26,13 +29,19 @@ function pageLoad() {
 
     if (mode === 'dark') {
         document.body.classList.add('dark');
-        darkModeBtn.classList.add('btn-outline-warning');
+        btnColor.forEach(button => {
+            button.classList.add('btn-outline-warning');
+            button.classList.remove('btn-info');
+        });
     } else {
-            document.body.classList.remove('dark');
-            localStorage.setItem('mode', 'light');
-            darkModeBtn.classList.remove('btn-outline-warning')
-            darkModeBtn.classList.add('btn-info');
+        document.body.classList.remove('dark');
+        localStorage.setItem('mode', 'light');
+        btnColor.forEach(button => {
+            button.classList.remove('btn-outline-warning');
+            button.classList.add('btn-info');
+        });
     }
+
 
     darkModeBtn.addEventListener('click', toggleDarkMode);
     // addBtn.addEventListener('click', addStudent);

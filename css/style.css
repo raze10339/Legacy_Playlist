@@ -3,3 +3,12 @@
     color: #dfd261;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}

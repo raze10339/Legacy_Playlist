@@ -47,21 +47,40 @@ body {
     text-transform: uppercase;
 }
 
+.content {
+    margin: 2.5rem 1.5rem 1.5rem 5rem;
+}
+
 .content section {
-    margin: 50px 10px 50px 50px;
-    min-height: 5rem;
+    margin: 3rem;
+    padding: 50px 70px;
     background-color: #474747;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     max-width: 20%;
 }
 
 .content section button {
     background-color: gold;
+    border-width: 5px;
+    border-radius: 10px;
     border-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     max-height: 10rem;
+    max-width: fit-content;
+}
+
+.content section button:hover {
+    color: gold;
+    background-color: black;
+}
+
+.container nav a:active {
+    background-color: black;
+    color: gold;
+    text-transform: capitalize;
 }

@@ -21,3 +21,9 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+#toggle-btn {
+    position: fixed;
+    top: 45px;
+    right: 45px;
+}

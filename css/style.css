@@ -84,7 +84,7 @@ body {
     background-color: black;
 }
 
-.container nav a:active {
+.header-container nav a:active {
     background-color: black;
     color: gold;
 }

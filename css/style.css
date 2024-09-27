@@ -24,25 +24,25 @@ body {
     font-size: 3rem;  /* Adjust the font-size of our h1 text*/
 }
 
-.container nav {
+.header-container nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #898989;
 }
 
-.container nav a {
+.header-container nav a {
     color: gold;
     font-size: 1.5rem;
     text-decoration: none;
 }
 
-.container nav a:hover {
+.header-container nav a:hover {
     text-decoration: underline;
     color: black;
 }
 
-.container nav a:active {
+.header-container nav a:active {
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -97,7 +97,7 @@ body {
 
 #new-releases-article {
     margin: 1.5rem;
-    min-width: 50rem;
+    min-width: 60rem;
     min-height: 20rem;
     background-color: #fff;
     display: flex;
@@ -117,12 +117,16 @@ body {
     justify-content: space-around;
 }
 
-.suggestion-display {
+/* .suggestion-grid-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* .suggestion-display article {
-    margin: 7.5rem;
+.suggestion-grid-container article {
+    margin: 20px;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } */

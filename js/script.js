@@ -9,7 +9,7 @@ paragraph.textContent = 'Taylor Swift, You Belong With Me, Billie Eilish, What W
 iframes.forEach(iframe => {
     iframe.parentNode.insertBefore(paragraph.cloneNode(true), iframe.nextSibling);
 });
-=======
+
 const addMusicBtn = document.querySelector('#addMusic');
 const darkModeBtn = document.querySelector('#toggle-btn');
 const btnColor = document.querySelectorAll('.buttons')
@@ -61,4 +61,4 @@ function pageLoad() {
 
 
 pageLoad();
->>>>>> 678245c8b053d7a123444cf694bb57f9246e2138
+
